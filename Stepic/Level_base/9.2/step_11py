@@ -1,0 +1,11 @@
+s = str(input())
+long = len(s) // 2
+chek = True
+for i in range(long):
+    if s[i] != s[-i - 1]:
+        chek = False
+        break
+if chek == True:
+    print("YES")
+else:
+    print("NO")

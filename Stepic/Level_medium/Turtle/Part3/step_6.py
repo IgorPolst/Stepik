@@ -1,0 +1,18 @@
+import turtle as t
+
+t.Screen().setup(1000, 500)
+t.hideturtle()
+t.Screen().bgcolor("blue")
+t.fillcolor("yellow")
+t.pencolor("yellow")
+t.begin_fill()
+t.circle(40)
+t.end_fill()
+t.penup()
+t.goto(15,0)
+t.pendown()
+t.fillcolor("blue")
+t.pencolor("blue")
+t.begin_fill()
+t.circle(40)
+t.end_fill()
