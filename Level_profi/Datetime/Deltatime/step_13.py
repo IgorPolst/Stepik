@@ -20,3 +20,15 @@ if (
     print(int(time_remaining.seconds // 60))
 else:
     print("Магазин не работает")
+
+# from datetime import datetime, timedelta
+
+# dt = datetime.strptime(input(), '%d.%m.%Y %H:%M')
+# td = timedelta(hours=dt.hour, minutes=dt.minute)
+
+# if dt.weekday() < 5 and timedelta(hours=9) <= td < timedelta(hours=21):
+#     print(int((timedelta(hours=21) - td).total_seconds() // 60))
+# elif dt.weekday() > 4 and timedelta(hours=10) <= td < timedelta(hours=18):
+#     print(int((timedelta(hours=18) - td).total_seconds() // 60))
+# else:
+#     print('Магазин не работает')
