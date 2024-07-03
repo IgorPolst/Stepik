@@ -1,22 +1,25 @@
-def for_and_append():                            # с использованием цикла for и метода append()
+def for_and_append():  # с использованием цикла for и метода append()
     iterations = 10_000_000
     result = []
     for i in range(iterations):
         result.append(i + 1)
     return result
-        
 
-def list_comprehension():                        # с использованием списочного выражения
+
+def list_comprehension():  # с использованием списочного выражения
     iterations = 10_000_000
-    return [i + 1 for i in range(iterations)] 
+    return [i + 1 for i in range(iterations)]
+
 
 import time
-def calculate_it (func, arg = 900):
-    start_time = time.perf_counter() 
-    list = func()
+
+
+def calculate_it(func):
+    start_time = time.perf_counter()
+    result = func()
     end_time = time.perf_counter()
-    print(end_time-start_time)
+    print(end_time - start_time)
 
 
-calculate_it(list_comprehension())
-calculate_it(for_and_append())
+calculate_it(list_comprehension)
+calculate_it(for_and_append)
