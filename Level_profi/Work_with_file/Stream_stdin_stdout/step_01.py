@@ -1,4 +1,2 @@
 import sys
-
-for line in sys.stdin:
-    print(line[::-1])
+print(*[line[::-1].strip("\n") for line in sys.stdin], sep = "\n")
