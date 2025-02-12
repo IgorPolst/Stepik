@@ -1,5 +1,6 @@
 import json
 import sys
 
-data = json.loads(sys.stdin)
-map(lambda parametr: print(parametr) ,data)
+dates = json.loads(sys.stdin.read())
+print(*(f'{k}: {", ".join(map(str, v))}' if isinstance(v, list) else f'{k}: {v}' 
+    for k, v in dates.items()), sep='\n')
