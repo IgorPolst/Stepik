@@ -1,5 +1,5 @@
 import csv
-with open("Work_with_file/CSV/sales.csv", encoding = "UTF-8") as file: 
+with open("Stepik\Level_profi\Work_with_file\CSV\sales.csv", 'rt',encoding = "UTF-8") as file: 
     sales = list(csv.reader(file, delimiter=";"))
     print(
         *list(
