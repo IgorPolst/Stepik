@@ -3,7 +3,7 @@ from functools import reduce
 
 products = dict(Counter(input().split(",")))
 
-max_len = len(max(products.keys(), key= lambda x: len(x)))
+max_len = len(max(products.keys(), key=lambda x: len(x)))
 print(max_len)
 
 for key, value in sorted(products.items()):

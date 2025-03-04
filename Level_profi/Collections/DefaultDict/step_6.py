@@ -12,11 +12,7 @@ def best_sender(messages, sender):
     )[0][0]
 
 
-messages = [
-    "How is Stepik for everyone",
-
-    "How is Stepik for everyone"
-]
+messages = ["How is Stepik for everyone", "How is Stepik for everyone"]
 senders = ["Bob", "Charlie"]
 
 print(best_sender(messages, senders))

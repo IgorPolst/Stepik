@@ -1,14 +1,16 @@
 import csv
 
-def csv_columns(filename): 
+
+def csv_columns(filename):
     d = {}
     with open(filename, "rt", encoding="UTF-8") as file:
         for row in csv.DictReader(file, delimiter=","):
-            for elem in row.items(): 
-                d[elem[0]] = d.get(elem[0], []) + [elem[1]] 
+            for elem in row.items():
+                d[elem[0]] = d.get(elem[0], []) + [elem[1]]
     return d
 
-text = '''movie,year,rating
+
+text = """movie,year,rating
 Machete,2010,72
 Marvin's Room,1996,80
 Raging Bull,1980,97
@@ -92,9 +94,9 @@ Dear America: Letters Home From Vietnam,1987,100
 Casino,1995,80
 The Fan,1996,38
 Heist,2015,26
-Men of Honor,2000,41'''
+Men of Honor,2000,41"""
 
-with open('deniro.csv', 'w') as file:
+with open("deniro.csv", "w") as file:
     file.write(text)
 
-print(csv_columns('deniro.csv'))
+print(csv_columns("deniro.csv"))

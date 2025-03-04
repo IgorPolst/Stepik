@@ -1,7 +1,7 @@
 from collections import namedtuple
 import pickle
 
-Animal = namedtuple('Animal', ['name', 'family', 'sex', 'color'])
+Animal = namedtuple("Animal", ["name", "family", "sex", "color"])
 
 with open("Level_profi/Collections/NamedTuple/step_3/data.pkl", "rb") as file:
     data = pickle.load(file)

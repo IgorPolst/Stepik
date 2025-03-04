@@ -43,7 +43,7 @@ print(letters3)
 
 # print(letters1 + letters2)
 
-word = 'stepik'
+word = "stepik"
 
 counter1 = Counter(word)
 counter2 = Counter(word * 3)

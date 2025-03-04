@@ -1,12 +1,13 @@
-import json 
+import json
+
 
 def is_correct_json(string):
     try:
         data = json.loads(string)
-        
+
     except:
         return False
-    
+
     return True
 
 

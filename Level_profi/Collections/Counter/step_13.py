@@ -1,5 +1,6 @@
 from collections import Counter
 
+
 def scrabble(symbols, word):
     symbols = Counter(symbols.lower())
     word = Counter(word.lower())
@@ -7,5 +8,4 @@ def scrabble(symbols, word):
     return symbols & word == word
 
 
-
-print(scrabble('eeeeegggggggeeeeeekkkkk', 'Beegeek'))
+print(scrabble("eeeeegggggggeeeeeekkkkk", "Beegeek"))
