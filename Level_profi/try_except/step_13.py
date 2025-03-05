@@ -17,3 +17,9 @@ try:
 except Exception as err:
     print(err)
     print(type(err))
+
+try:
+    print(get_weekday(8))
+except ValueError as err:
+    print(err)
+    print(type(err))
