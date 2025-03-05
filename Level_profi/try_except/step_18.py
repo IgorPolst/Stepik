@@ -1,33 +1,41 @@
 class PasswordError(Exception):
     pass
 
+
 class LengthError(PasswordError):
     pass
+
 
 class LetterError(PasswordError):
     pass
 
+
 class DigitError(PasswordError):
     pass
 
+
 def is_good_password(string):
-    if len(string)  < 9:
+    if len(string) < 9:
         raise LengthError
-    if any(i.isdigit() for i in string):
+    if not (string != string.upper() and string != string.lower()):
+        raise LetterError
+    if not any(i.isdigit() for i in string):
         raise DigitError
 
-    if (string != string.upper()
-        and string != string.lower()):
-        raise LetterError
     return True
+
 
 door = True
 
-while(door):
+while door:
     try:
         is_good_password(input())
-    except Exception as err:
-        print(err)
+    except LengthError:
+        print("LengthError")
+    except LetterError:
+        print("LetterError")
+    except DigitError:
+        print("DigitError")
     else:
         door = False
         print("Success!")
