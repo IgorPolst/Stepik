@@ -6,4 +6,5 @@ def is_good_password(string):
         and string != string.lower()
     )
 
-print(is_good_password('МойПарольСамыйЛучший111'))
+
+print(is_good_password("МойПарольСамыйЛучший111"))

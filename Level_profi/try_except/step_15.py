@@ -7,6 +7,6 @@ try:
         data = json.dump(file)
     print(data)
 except FileNotFoundError:
-    print("Файл не найден") 
+    print("Файл не найден")
 except Exception:
-    print("Ошибка при десериализации") 
+    print("Ошибка при десериализации")
