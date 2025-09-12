@@ -1,0 +1,9 @@
+def plus(a,b) -> int:
+    return a+b
+
+print(plus(1,2))
+
+name1 = "Igor"
+name2 = "Dima"
+print(name1, "and", name2)
+print(f"{name1} and {name2}")
